@@ -1,0 +1,29 @@
+:global([data-testid="input-planetName"]) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+:global([data-testid="input-keyPoints"]) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+:global(div[data-testid="input-rotationTime"] div[data-ui="Select"]) {
+    flex-basis: 110px;
+}
+
+:global(div[data-testid="input-revolutionTime"] div[data-ui="Select"]) {
+    flex-basis: 110px;
+}
+
+:global(div[data-testid="input-radius"] div[data-ui="Select"]) {
+    flex-basis: 110px;
+}
+
+:global(div[data-testid="input-averageTemperature"] div[data-ui="Select"]) {
+    flex-basis: 110px;
+}
+
+/* :root > [data-testid="input-planetName"] {
+    color: red;
+} */
