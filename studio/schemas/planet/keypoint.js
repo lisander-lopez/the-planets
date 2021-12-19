@@ -4,6 +4,11 @@ export const keyPoint = {
     type: "object",
     fields: [
         {
+            title: "Key Point Picture",
+            name: "picture",
+            type: "image",
+        },
+        {
             title: "Title",
             name: "keyPointTitle",
             type: "text",

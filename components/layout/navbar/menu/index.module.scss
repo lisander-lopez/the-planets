@@ -1,0 +1,14 @@
+.list-item-text {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+    }
+    &:hover {
+        &::before {
+            width: 100%;
+            height: 2px;
+            background-color: var(--list-item-hover-color);
+        }
+    }
+}

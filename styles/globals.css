@@ -1,16 +1,33 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-Antonio text-2xl leading-loose;
+  }
+
+  h2 {
+    @apply font-Antonio text-xl leading-relaxed tracking-tight;
+  }
+
+  h3 {
+    @apply font-Spartan font-bold text-sm leading-normal tracking-looser;
+  }
+
+  h4 {
+    @apply font-Spartan font-bold text-xs leading-normal tracking-normal
+  }
+
+  p,
+  span {
+    @apply font-Spartan text-md leading-normal
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer components {
+  .btn-primary {
+    width: 350px; /* Yes, I know I am going against the recommended buttt it is what it is */
+    @apply flex border border-lightGray
+  }
 }
